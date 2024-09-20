@@ -1,0 +1,23 @@
+Middleware: Anything between the request and response
+Middleware are both build in and custom
+In index.html, css path is
+
+ <link rel="stylesheet" href="../css/style.css" />
+
+ if we provide href="css/style.css", without dots, it should work because we have declared a Middleware for serving public file and code now knows that public files are available due to this
+
+npm i cors
+
+====================
+
+creating routers notes tut08
+
+tut11
+npm i dotenv jsonwebtoken cookie-parser
+
+generate random crypto byte string to use as access token and refresh token
+
+run node in terminal and execute below
+
+require('crypto').randomBytes(64).toString('hex')
+
