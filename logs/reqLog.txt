@@ -1358,3 +1358,11 @@
 20240920	14:25:21	f4934b13-4a57-48f9-a590-c97ba4fef8b3	POST	undefined	/expenses/
 20240920	14:25:30	1da4f6d5-beba-4715-920e-411ccc32a504	POST	undefined	/expenses/
 20240920	14:25:42	a3a5053c-4971-4df3-843b-bf7f0cb1eea2	POST	undefined	/expenses/
+20240921	17:51:23	11aab9ae-0cf9-4985-98c5-6d56cfbee3aa	OPTIONS	http://localhost:3000	/expenses
+20240921	17:51:23	a9ce245d-97ab-4d30-b359-1a4db25a2319	OPTIONS	http://localhost:3000	/expenses
+20240921	17:51:23	5a7a2245-0fdf-4115-8a69-0dc965a67fbe	GET	http://localhost:3000	/expenses
+20240921	17:51:23	41f3fde5-75f0-4b88-bc02-d1e401944747	GET	http://localhost:3000	/expenses
+20240921	17:51:48	07ad87b2-e829-4b07-bfbc-3eb1f0b181e4	OPTIONS	http://localhost:3000	/expenses
+20240921	17:51:48	181e22a3-8b4f-4663-9ac0-2f790f9cacf2	POST	http://localhost:3000	/expenses
+20240921	17:51:49	c3dc298d-f5fa-426a-a5b0-3cbac63d0b7d	GET	http://localhost:3000	/expenses
+20240921	17:51:49	1874f27c-b0ce-4e97-b4d3-bd27eb8f459d	GET	http://localhost:3000	/expenses
