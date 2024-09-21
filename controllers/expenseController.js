@@ -29,6 +29,7 @@ const createNewExpense = async (req, res) => {
           transferMode: req.body.transferMode,
           bankName: req.body.bankName,
           item: req.body.item,
+          category: req.body.category,
           amount: req.body.amount
         });
 
@@ -68,6 +69,7 @@ const updateExpense = async (req, res) => {
           transferMode: req.body.transferMode,
           bankName: req.body.bankName,
           item: req.body.item,
+          category: req.body.category,
           amount: req.body.amount
         },
         { new: true }
