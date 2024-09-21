@@ -1,11 +1,23 @@
 const Expense = require('../model/Expense');
 
-const getAllExpenses = async (req, res) => {
+/* const getAllExpenses = async (req, res) => {
     const expenses = await Expense.find({ userId: req.user });
     if (!expenses) return res.status(204).json({ 'message': 'No Expenses found' });
     res.json(expenses);
 }
+ */
 
+const getAllExpenses = async (req, res) => {
+  try {
+      const expenses = await Expense.find({ userId: req.user }).sort({ date: -1 });
+      if (!expenses || expenses.length === 0) {
+          return res.status(204).json({ 'message': 'No Expenses found' });
+      }
+      res.json(expenses);
+  } catch (err) {
+      res.status(500).json({ 'message': 'Server Error', 'error': err });
+  }
+};
 
 const createNewExpense = async (req, res) => { 
 
