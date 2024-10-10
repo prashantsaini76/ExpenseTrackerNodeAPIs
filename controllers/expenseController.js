@@ -21,7 +21,7 @@ const getAllExpenses = async (req, res) => {
 
 const createNewExpense = async (req, res) => { 
 
-    console.log("LOG REQUEST", req.body)
+    //console.log("LOG REQUEST", req.body)
     try {
         const newExpense = new Expense({
           userId: req.user,
